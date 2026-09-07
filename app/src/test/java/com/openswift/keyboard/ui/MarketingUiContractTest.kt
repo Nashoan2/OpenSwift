@@ -85,6 +85,16 @@ class MarketingUiContractTest {
         assertTrue(File("src/main/res/drawable/ic_star.xml").isFile)
     }
 
+    @Test
+    fun keyboardSettingsKeyAlwaysOpensTheSettingsSurface() {
+        val ime = source("java/com/openswift/keyboard/OpenSwiftIME.kt")
+        val mainActivity = source("java/com/openswift/keyboard/ui/MainActivity.kt")
+
+        assertTrue(ime.contains("Intent.FLAG_ACTIVITY_CLEAR_TASK"))
+        assertTrue(ime.contains("MainActivity.EXTRA_OPEN_SETTINGS, true"))
+        assertTrue(mainActivity.contains("const val EXTRA_OPEN_SETTINGS"))
+    }
+
     private fun source(relativePath: String): String {
         val file = File("src/main/$relativePath")
         check(file.isFile) { "Missing source file: ${file.absolutePath}" }

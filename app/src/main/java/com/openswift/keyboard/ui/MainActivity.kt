@@ -365,7 +365,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val EXTRA_PER_APP_PACKAGE = "com.openswift.keyboard.extra.PER_APP_PACKAGE"
-        private const val EXTRA_OPEN_SETTINGS = "com.openswift.keyboard.extra.OPEN_SETTINGS"
+        const val EXTRA_OPEN_SETTINGS = "com.openswift.keyboard.extra.OPEN_SETTINGS"
         private const val ENCRYPTED_SYNC_MIME_TYPE = "application/vnd.openswift.sync"
     }
 }

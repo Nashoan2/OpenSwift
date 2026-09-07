@@ -1,5 +1,6 @@
 package com.openswift.keyboard
 
+import android.content.Intent
 import android.inputmethodservice.InputMethodService
 import android.view.KeyEvent
 import android.view.View
@@ -228,8 +229,9 @@ class OpenSwiftIME : InputMethodService() {
             KC.CLIPBOARD -> showClipboardView()
             KC.SETTINGS -> {
                 startActivity(
-                    android.content.Intent(this, MainActivity::class.java)
-                        .addFlags(android.content.Intent.FLAG_ACTIVITY_NEW_TASK)
+                    Intent(this, MainActivity::class.java)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                        .putExtra(MainActivity.EXTRA_OPEN_SETTINGS, true)
                         .putExtra(MainActivity.EXTRA_PER_APP_PACKAGE, activeAppConfig.packageName),
                 )
             }
@@ -456,4 +458,3 @@ class OpenSwiftIME : InputMethodService() {
         private const val LANGUAGE_CONTEXT_LIMIT = 8
     }
 }
-

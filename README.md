@@ -7,7 +7,7 @@
 <p align="center"><strong>A fast Android keyboard with an offline typing engine and no network permission.</strong></p>
 
 <p align="center">
-  <a href="https://github.com/SysAdminDoc/OpenSwift/releases"><img src="https://img.shields.io/badge/version-0.3.6-7AA2F7" alt="Version 0.3.6"></a>
+  <a href="https://github.com/SysAdminDoc/OpenSwift/releases"><img src="https://img.shields.io/badge/version-0.3.7-7AA2F7" alt="Version 0.3.7"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-22C55E" alt="MIT license"></a>
   <img src="https://img.shields.io/badge/platform-Android%208%2B-3DDC84" alt="Android 8 or newer">
   <img src="https://img.shields.io/badge/network%20permission-none-19C7E8" alt="No network permission">
@@ -33,7 +33,7 @@ OpenSwift combines glide typing, offline prediction, five language packs, and te
 
 ## Install
 
-1. Download `OpenSwift-v0.3.6-release.apk` from [Releases](https://github.com/SysAdminDoc/OpenSwift/releases/latest).
+1. Download `OpenSwift-v0.3.7-release.apk` from [Releases](https://github.com/SysAdminDoc/OpenSwift/releases/latest).
 2. Allow installs from the browser or file manager you used to download it.
 3. Open OpenSwift and tap **Enable in Android settings**.
 4. Enable OpenSwift, then choose it as your default on-screen keyboard.
@@ -135,6 +135,7 @@ Without signing variables, the release task produces `app-release-unsigned.apk`.
 
 ## Project map
 
+- `assets/brand/concepts/` preserves all six original logo directions. Its selection record identifies the approved keyboard-glide mark and matching wordmark masters.
 - `OpenSwiftIME` owns editor privacy state, input flow, suggestions, and keyboard panels.
 - `KeyboardView` draws keys, suggestions, feedback, and glide trails.
 - `Predictor`, `GlideDecoder`, `WordList`, and `UserDictionary` form the offline language engine.

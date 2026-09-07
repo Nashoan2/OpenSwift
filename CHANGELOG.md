@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.3.7 (2026-09-07)
+
+### Added
+- Preserved all six original logo directions in `assets/brand/concepts/`, including the approved keyboard-glide mark and matching wordmark.
+- Added untouched full-resolution masters and a machine-readable selection record so future brand work starts from the approved source files.
+
+### Fixed
+- Made the keyboard's Settings key open the settings surface every time, even when an older OpenSwift task was parked on another tab.
+
+### Verification
+- Confirmed the selected masters match their approved concepts byte-for-byte and retain real transparent pixels.
+- Rebuilt and checked the signed release APK, then exercised the installed app and keyboard on an isolated Android emulator.
+
 ## v0.3.6 (2026-09-06)
 
 ### Changed

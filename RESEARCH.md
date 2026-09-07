@@ -16,7 +16,7 @@ The product is best suited to Android users who want a transparent keyboard they
 - JSON backups are validated before import. Passphrase-protected snapshots use an authenticated AES-256-GCM envelope.
 - The published extension and transport entry points are compile-time disabled. OpenSwift does not load third-party APKs.
 
-These claims are enforced by unit tests and manifest contract tests. The 0.3.6 release was also exercised as an installed keyboard on an isolated Android 15 emulator.
+These claims are enforced by unit tests and manifest contract tests. The 0.3.7 release was also exercised as an installed keyboard on an isolated Android 15 emulator.
 
 ## Product review
 
@@ -44,4 +44,4 @@ The custom keyboard remains a drawing-based Android view, while the management a
 
 ## Release conclusion
 
-Version 0.3.6 is ready for GitHub distribution. The new presentation accurately reflects the installed product, the privacy language is supported by code and tests, and the README states the current limits without implying unfinished features are available.
+Version 0.3.7 is ready for GitHub distribution. The presentation accurately reflects the installed product, the privacy language is supported by code and tests, and the README states the current limits without implying unfinished features are available.
