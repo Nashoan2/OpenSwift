@@ -13,6 +13,16 @@
   <img src="https://img.shields.io/badge/network%20permission-none-19C7E8" alt="No network permission">
 </p>
 
+<p align="center">
+  <a href="https://ko-fi.com/X8K126YVER">
+    <img height="42" src="https://storage.ko-fi.com/cdn/kofi2.png?v=3" alt="Buy me a coffee on Ko-fi" />
+  </a>
+</p>
+
+<p align="center">
+  <sub><em>If this project helps you, a coffee helps me keep working on it.</em></sub>
+</p>
+
 <p align="center"><a href="https://github.com/SysAdminDoc/OpenSwift/releases/latest"><strong>Download the latest signed APK</strong></a></p>
 
 OpenSwift combines glide typing, offline prediction, five language packs, and ten themes in a keyboard you can inspect. The app does not request Android's network permission. Clipboard history is off by default, private fields disable learning automatically, and every data transfer starts with an action you choose.
